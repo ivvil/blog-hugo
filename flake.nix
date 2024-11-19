@@ -9,7 +9,7 @@
     #   url = "github:panr/hugo-theme-terminal";
     #   flake = false;
     # };
-    hugo-cyberspace = {
+    hugo-cyberscape = {
       url = "github:isaksolheim/cyberscape";
       flake = false;
     };
@@ -20,7 +20,7 @@
     nixpkgs,
     utils,
     # hugo-terminal,
-    hugo-cyberspace,
+    hugo-cyberscape,
     ...
   }:
     utils.lib.eachDefaultSystem
@@ -34,7 +34,7 @@
         src = self;
         configurePhase = ''
           mkdir -p "themes/cyberspace"
-          cp -r ${hugo-cyberspace}/* "themes/cyberspace"
+          cp -r ${hugo-cyberscape}/* "themes/cyberspace"
         '';
         buildPhase = ''
           ${pkgs.hugo}/bin/hugo --minify
@@ -63,7 +63,7 @@
         buildInputs = [pkgs.hugo];
         shellHook = ''
           mkdir -p themes
-          ln -sn "${hugo-terminal}" "themes/terminal"
+          ln -sn "${hugo-cyberscape}" "themes/cyberscape"
         '';
       };
     });

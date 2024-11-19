@@ -1,6 +1,6 @@
 {
   "nodes": {
-    "hugo-cyberspace": {
+    "hugo-cyberscape": {
       "flake": false,
       "locked": {
         "lastModified": 1702673750,
@@ -16,29 +16,13 @@
         "type": "github"
       }
     },
-    "hugo-terminal": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1732003783,
-        "narHash": "sha256-1ohtmhdiDbOWKKa+wyuM3mCajBPRknTHHhHUfG7GvvI=",
-        "owner": "panr",
-        "repo": "hugo-theme-terminal",
-        "rev": "c779a7083471f5f6f7036dfd60e9ff9a321600f9",
-        "type": "github"
-      },
-      "original": {
-        "owner": "panr",
-        "repo": "hugo-theme-terminal",
-        "type": "github"
-      }
-    },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1732056259,
-        "narHash": "sha256-7E8vw/viPZqBzgZAcLW3ub3E+wsEYuamJCz4xq3Kp4A=",
+        "lastModified": 1732058618,
+        "narHash": "sha256-m2wlYheWC2GhaNdXm8J9A2B9F/qSTFhV87lINEHDpJ8=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "27bc5d4ffa431a6c78706846dabb4ef08ebc8e36",
+        "rev": "40ffbfdc9ecca57d897898286cb55fd027c3d4d5",
         "type": "github"
       },
       "original": {
@@ -49,8 +33,7 @@
     },
     "root": {
       "inputs": {
-        "hugo-cyberspace": "hugo-cyberspace",
-        "hugo-terminal": "hugo-terminal",
+        "hugo-cyberscape": "hugo-cyberscape",
         "nixpkgs": "nixpkgs",
         "utils": "utils"
       }

@@ -1,4 +1,14 @@
 baseURL: https://blog.shft.dev/
 languageCode: es-es
 title: Blog de Iván
-theme: ["terminal"]
+theme: cyberscape
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+menu:
+  main:
+    - name: markdown
+      url: /markdown/
+      weight: 1
+
