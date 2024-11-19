@@ -1,0 +1,4 @@
+baseURL: https://blog.shft.dev/
+languageCode: es-es
+title: Blog de Iván
+theme: ["terminal"]
