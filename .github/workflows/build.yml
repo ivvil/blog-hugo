@@ -1,7 +1,11 @@
 name: "Build and deploy blog"
 on:
   pull_request:
+    branches:
+      - master
   push:
+    branches:
+      - master
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -26,5 +30,3 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./result/public
-
-
