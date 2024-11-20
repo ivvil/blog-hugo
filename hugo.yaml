@@ -1,4 +1,4 @@
-baseURL: https://ivvil.github.io/blog-hugo/
+baseURL: https://blog.shft.dev
 languageCode: es-es
 title: Blog de Iván
 theme: cyberscape
@@ -12,7 +12,6 @@ menu:
       url: /markdown/
       weight: 1
 
-canonifyURLs: true
 
 
 
