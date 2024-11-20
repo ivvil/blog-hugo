@@ -12,3 +12,7 @@ menu:
       url: /markdown/
       weight: 1
 
+relativeURLs: true
+
+
+
