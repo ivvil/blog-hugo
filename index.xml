@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blog de Iván</title><link>https://blog.shft.dev/</link><description>Recent content on Blog de Iván</description><generator>Hugo</generator><language>es-es</language><atom:link href="https://blog.shft.dev/index.xml" rel="self" type="application/rss+xml"/><item><title>Test entry</title><link>https://blog.shft.dev/test/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.shft.dev/test/</guid><description>&lt;div id="outline-container-headline-1" class="outline-2">
+&lt;h2 id="headline-1">
+Hello world!
+&lt;/h2>
+&lt;div id="outline-text-headline-1" class="outline-text-2">
+&lt;p>
+Buenos dias &lt;/p>
+&lt;/div>
+&lt;/div></description></item></channel></rss>
