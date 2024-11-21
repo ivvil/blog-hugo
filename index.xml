@@ -1,9 +1,27 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blog de Iván</title><link>https://blog.shft.dev/</link><description>Recent content on Blog de Iván</description><generator>Hugo</generator><language>es-es</language><atom:link href="https://blog.shft.dev/index.xml" rel="self" type="application/rss+xml"/><item><title>Test entry</title><link>https://blog.shft.dev/test/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.shft.dev/test/</guid><description>&lt;div id="outline-container-headline-1" class="outline-2">
-&lt;h2 id="headline-1">
-Hello world!
-&lt;/h2>
-&lt;div id="outline-text-headline-1" class="outline-text-2">
-&lt;p>
-Buenos dias &lt;/p>
-&lt;/div>
-&lt;/div></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blog de Iván</title><link>https://blog.shft.dev/</link><description>Recent content on Blog de Iván</description><generator>Hugo</generator><language>es-es</language><lastBuildDate>Wed, 24 Jan 2024 18:09:49 -0800</lastBuildDate><atom:link href="https://blog.shft.dev/index.xml" rel="self" type="application/rss+xml"/><item><title>Math examples</title><link>https://blog.shft.dev/markdown/</link><pubDate>Wed, 24 Jan 2024 18:09:49 -0800</pubDate><guid>https://blog.shft.dev/markdown/</guid><description>&lt;h3 id="guía-completa-de-markdown">Guía completa de Markdown&lt;/h3>
+&lt;p>Markdown es un lenguaje de marcado ligero que permite crear documentos de texto formateados de manera sencilla. Es ampliamente utilizado en plataformas como GitHub, foros y blogs.&lt;/p>
+&lt;hr>
+&lt;h2 id="markdown-básico">&lt;strong>Markdown Básico&lt;/strong>&lt;/h2>
+&lt;h3 id="encabezados">Encabezados&lt;/h3>
+&lt;p>Usa el símbolo &lt;code>#&lt;/code> seguido de un espacio para crear encabezados. Puedes variar el tamaño añadiendo más &lt;code>#&lt;/code>.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-markdown" data-lang="markdown">&lt;span style="display:flex;">&lt;span># Encabezado Nivel 1
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">## Encabezado Nivel 2
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">### Encabezado Nivel 3
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;strong>Resultado:&lt;/strong>&lt;/p>
+&lt;h1 id="encabezado-nivel-1">Encabezado Nivel 1&lt;/h1>
+&lt;h2 id="encabezado-nivel-2">Encabezado Nivel 2&lt;/h2>
+&lt;h3 id="encabezado-nivel-3">Encabezado Nivel 3&lt;/h3>
+&lt;hr>
+&lt;h3 id="énfasis">Énfasis&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Negrita&lt;/strong>: Usa &lt;code>**texto**&lt;/code> o &lt;code>__texto__&lt;/code>.&lt;/li>
+&lt;li>&lt;em>Cursiva&lt;/em>: Usa &lt;code>*texto*&lt;/code> o &lt;code>_texto_&lt;/code>.&lt;/li>
+&lt;li>&lt;em>&lt;strong>Negrita y cursiva&lt;/strong>&lt;/em>: Usa &lt;code>***texto***&lt;/code> o &lt;code>___texto___&lt;/code>.&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-markdown" data-lang="markdown">&lt;span style="display:flex;">&lt;span>**Negrita**
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="font-style:italic">*Cursiva*&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="font-style:italic">**&lt;/span>*Negrita y cursiva***
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;strong>Resultado:&lt;/strong>
+&lt;strong>Negrita&lt;/strong>
+&lt;em>Cursiva&lt;/em>
+&lt;em>&lt;strong>Negrita y cursiva&lt;/strong>&lt;/em>&lt;/p></description></item></channel></rss>
