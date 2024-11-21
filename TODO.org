@@ -2,10 +2,13 @@
 #+TODO: TODO PROG REVW BLOK | DONE
 
 #+BEGIN: clocktable :scope file :maxlevel 2
-#+CAPTION: Clock summary at [2024-11-21 Thu 23:22]
-| Headline     | Time   |
-|--------------+--------|
-| *Total time* | *0:00* |
+#+CAPTION: Clock summary at [2024-11-22 Fri 00:32]
+| Headline            | Time   |      |
+|---------------------+--------+------|
+| *Total time*        | *0:40* |      |
+|---------------------+--------+------|
+| Add articles        | 0:40   |      |
+| \_  Image test page |        | 0:40 |
 #+END:
 
 
@@ -18,6 +21,8 @@
 :PROPERTIES:
 :Effort:   1h
 :END:
+
+* PROG Fix lists 
 
 * TODO Add articles
 
@@ -33,9 +38,12 @@
 :Effort: 1h30min
 :END:
 
-** TODO Image test page
+** PROG Image test page
 :PROPERTIES:
 :Effort: 30min
+:END:
+:LOGBOOK:
+CLOCK: [2024-11-21 Thu 23:52]--[2024-11-22 Fri 00:32] =>  0:40
 :END:
 
 With carousel

@@ -11,6 +11,9 @@ menu:
     - name: markdown
       url: /markdown/
       weight: 1
+    - name: galery
+      url: /galery/
+      weight: 1
 
 
 
