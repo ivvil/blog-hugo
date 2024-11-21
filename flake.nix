@@ -33,13 +33,14 @@
         name = "hugo-servidor";
         src = self;
         configurePhase = ''
-          mkdir -p "themes/cyberspace"
+          mkdir -p "themes/cyberscape"
           cp -r ${hugo-cyberscape}/* "themes/cyberscape"
         '';
         buildPhase = ''
           ${pkgs.hugo}/bin/hugo --minify
-          ${pkgs.tailwindcss}/bin/tailwindcss -i themes/cyberscape/assets/main.css -o themes/cyberscape/assets/style.css
         '';
+        #   ${pkgs.tailwindcss}/bin/tailwindcss -i themes/cyberscape/assets/main.css -o themes/cyberscape/assets/style.css
+        # '';
         installPhase = "cp -r public $out";
       };
 
