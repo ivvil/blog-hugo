@@ -34,10 +34,11 @@
         src = self;
         configurePhase = ''
           mkdir -p "themes/cyberspace"
-          cp -r ${hugo-cyberscape}/* "themes/cyberspace"
+          cp -r ${hugo-cyberscape}/* "themes/cyberscape"
         '';
         buildPhase = ''
           ${pkgs.hugo}/bin/hugo --minify
+          ${pkgs.tailwindcss}/bin/tailwindcss -i themes/cyberscape/assets/main.css -o themes/cyberscape/assets/style.css
         '';
         installPhase = "cp -r public $out";
       };
@@ -50,6 +51,9 @@
           drv = pkgs.writeShellScriptBin "hugo-serve" ''
             ${pkgs.hugo}/bin/hugo server -D
           '';
+          #   &
+          #   ${pkgs.tailwindcss}/bin/tailwindcss -i themes/cyberscape/assets/main.css -o themes/cyberscape/assets/style.css --watch
+          # '';
         };
         newpost = utils.lib.mkApp {
           drv = pkgs.writeShellScriptBin "new-post" ''
@@ -60,7 +64,7 @@
       };
 
       devShells.default = pkgs.mkShell {
-        buildInputs = [pkgs.hugo];
+        buildInputs = [pkgs.hugo pkgs.nodejs];
         shellHook = ''
           mkdir -p themes
           ln -sn "${hugo-cyberscape}" "themes/cyberscape"

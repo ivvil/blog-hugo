@@ -1,6 +1,0 @@
-#+title: Test entry
-#+DRAFT: false
-
-* Hello world!
-
-Buenos dias 
