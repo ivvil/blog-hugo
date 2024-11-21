@@ -1,0 +1,46 @@
+#+title: TODO
+#+TODO: TODO PROG REVW BLOK | DONE
+
+#+BEGIN: clocktable :scope file :maxlevel 2
+#+CAPTION: Clock summary at [2024-11-21 Thu 23:22]
+| Headline     | Time   |
+|--------------+--------|
+| *Total time* | *0:00* |
+#+END:
+
+
+* TODO Fix mathjax
+:PROPERTIES:
+:Effort:   1h
+:END:
+
+* TODO Fix mermaid
+:PROPERTIES:
+:Effort:   1h
+:END:
+
+* TODO Add articles
+
+** PROG Markdown example
+
+** TODO Nix page setup overview
+:PROPERTIES:
+:Effort: 1h30min
+:END:
+
+** TODO Lisp overview
+:PROPERTIES:
+:Effort: 1h30min
+:END:
+
+** TODO Image test page
+:PROPERTIES:
+:Effort: 30min
+:END:
+
+With carousel
+
+** TODO Tv channel overview
+:PROPERTIES:
+:Effort: 30min
+:END:
