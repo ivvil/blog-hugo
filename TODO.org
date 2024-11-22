@@ -2,13 +2,14 @@
 #+TODO: TODO PROG REVW BLOK | DONE
 
 #+BEGIN: clocktable :scope file :maxlevel 2
-#+CAPTION: Clock summary at [2024-11-22 Fri 00:32]
-| Headline            | Time   |      |
-|---------------------+--------+------|
-| *Total time*        | *0:40* |      |
-|---------------------+--------+------|
-| Add articles        | 0:40   |      |
-| \_  Image test page |        | 0:40 |
+#+CAPTION: Clock summary at [2024-11-22 Fri 09:35]
+| Headline                | Time   |      |
+|-------------------------+--------+------|
+| *Total time*            | *1:23* |      |
+|-------------------------+--------+------|
+| Add articles            | 1:23   |      |
+| \_  Image test page     |        | 0:40 |
+| \_  Tv channel overview |        | 0:43 |
 #+END:
 
 
@@ -26,7 +27,7 @@
 
 * TODO Add articles
 
-** PROG Markdown example
+** REVW Markdown example
 
 ** TODO Nix page setup overview
 :PROPERTIES:
@@ -38,7 +39,7 @@
 :Effort: 1h30min
 :END:
 
-** PROG Image test page
+** REVW Image test page
 :PROPERTIES:
 :Effort: 30min
 :END:
@@ -48,7 +49,16 @@ CLOCK: [2024-11-21 Thu 23:52]--[2024-11-22 Fri 00:32] =>  0:40
 
 With carousel
 
-** TODO Tv channel overview
+*** TODO Move css and js from to assets folder
+
+*** TODO Move images to assets
+
+*** TODO Fix styles
+
+** REVW Tv channel overview
 :PROPERTIES:
 :Effort: 30min
+:END:
+:LOGBOOK:
+CLOCK: [2024-11-22 Fri 08:52]--[2024-11-22 Fri 09:35] =>  0:43
 :END:

@@ -1,0 +1,24 @@
+{{ define "main" }}
+
+<main class="w-full h-full bg-white border-4 border-gray-200 p-4 overflow-x-auto markdown">
+	{{ .Content }}
+
+	<ul>
+		{{ range .Site.Data.tv }}
+		<h2>
+			<li>{{ .name }}</li>
+		</h2>
+		<hr>
+		{{ range .channels }}
+		<a href="{{ .web }}">
+			<img src="{{ .logo }}" alt="{{ .name }}">
+		</a>
+		{{ end }}
+		{{ end }}		
+	</ul>
+	<p>
+		<a href="/"> >> Home</a>
+	</p>
+</main>
+
+{{ end }}
