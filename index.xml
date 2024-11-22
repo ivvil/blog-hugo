@@ -1,29 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blog de Iván</title><link>https://blog.shft.dev/</link><description>Recent content on Blog de Iván</description><generator>Hugo</generator><language>es-es</language><lastBuildDate>Fri, 22 Nov 2024 00:11:55 +0100</lastBuildDate><atom:link href="https://blog.shft.dev/index.xml" rel="self" type="application/rss+xml"/><item><title>Carusel example</title><link>https://blog.shft.dev/galery/</link><pubDate>Fri, 22 Nov 2024 00:11:55 +0100</pubDate><guid>https://blog.shft.dev/galery/</guid><description>&lt;div id="carousel0" class="carousel" duration="7000">
- &lt;ul>
- 
- &lt;li id="c0_slide1" style="min-width: calc(100%/1 2 3 4); padding-bottom: 500px;">&lt;img src="https://blog.shft.dev/images/18A_0048.jpg" alt="" />&lt;div>&lt;div>1&lt;/div>&lt;/div>&lt;/li>
- 
- &lt;li id="c0_slide2" style="min-width: calc(100%/1 2 3 4); padding-bottom: 500px;">&lt;img src="https://blog.shft.dev/images/27A_0057.jpg" alt="" />&lt;div>&lt;div>2&lt;/div>&lt;/div>&lt;/li>
- 
- &lt;li id="c0_slide3" style="min-width: calc(100%/1 2 3 4); padding-bottom: 500px;">&lt;img src="https://blog.shft.dev/images/P-2271B.jpg" alt="" />&lt;div>&lt;div>3&lt;/div>&lt;/div>&lt;/li>
- 
- &lt;li id="c0_slide4" style="min-width: calc(100%/1 2 3 4); padding-bottom: 500px;">&lt;img src="https://blog.shft.dev/images/castle.jpg" alt="" />&lt;div>&lt;div>4&lt;/div>&lt;/div>&lt;/li>
- 
- &lt;/ul>
- &lt;ol>
- 
- &lt;li>&lt;a href="#c0_slide1">&lt;/a>&lt;/li>
- 
- &lt;li>&lt;a href="#c0_slide2">&lt;/a>&lt;/li>
- 
- &lt;li>&lt;a href="#c0_slide3">&lt;/a>&lt;/li>
- 
- &lt;li>&lt;a href="#c0_slide4">&lt;/a>&lt;/li>
- 
- &lt;/ol>
- &lt;div class="prev">&amp;lsaquo;&lt;/div>
- &lt;div class="next">&amp;rsaquo;&lt;/div>
-&lt;/div></description></item><item><title>Math examples</title><link>https://blog.shft.dev/markdown/</link><pubDate>Wed, 24 Jan 2024 18:09:49 -0800</pubDate><guid>https://blog.shft.dev/markdown/</guid><description>&lt;h3 id="guía-completa-de-markdown">Guía completa de Markdown&lt;/h3>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blog de Iván</title><link>https://blog.shft.dev/</link><description>Recent content on Blog de Iván</description><generator>Hugo</generator><language>es-es</language><lastBuildDate>Fri, 22 Nov 2024 09:07:59 +0100</lastBuildDate><atom:link href="https://blog.shft.dev/index.xml" rel="self" type="application/rss+xml"/><item><title>Canales de television</title><link>https://blog.shft.dev/tv/</link><pubDate>Fri, 22 Nov 2024 09:07:59 +0100</pubDate><guid>https://blog.shft.dev/tv/</guid><description/></item><item><title>Math examples</title><link>https://blog.shft.dev/markdown/</link><pubDate>Fri, 22 Nov 2024 08:42:37 +0100</pubDate><guid>https://blog.shft.dev/markdown/</guid><description>&lt;h3 id="guía-completa-de-markdown">Guía completa de Markdown&lt;/h3>
 &lt;p>Markdown es un lenguaje de marcado ligero que permite crear documentos de texto formateados de manera sencilla. Es ampliamente utilizado en plataformas como GitHub, foros y blogs.&lt;/p>
 &lt;hr>
 &lt;h2 id="markdown-básico">&lt;strong>Markdown Básico&lt;/strong>&lt;/h2>
@@ -49,4 +24,29 @@
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;strong>Resultado:&lt;/strong>
 &lt;strong>Negrita&lt;/strong>
 &lt;em>Cursiva&lt;/em>
-&lt;em>&lt;strong>Negrita y cursiva&lt;/strong>&lt;/em>&lt;/p></description></item></channel></rss>
+&lt;em>&lt;strong>Negrita y cursiva&lt;/strong>&lt;/em>&lt;/p></description></item><item><title>Carusel example</title><link>https://blog.shft.dev/galery/</link><pubDate>Fri, 22 Nov 2024 00:11:55 +0100</pubDate><guid>https://blog.shft.dev/galery/</guid><description>&lt;div id="carousel0" class="carousel" duration="7000">
+ &lt;ul>
+ 
+ &lt;li id="c0_slide1" style="min-width: calc(100%/1 2 3 4); padding-bottom: 500px;">&lt;img src="https://blog.shft.dev/images/18A_0048.jpg" alt="" />&lt;div>&lt;div>1&lt;/div>&lt;/div>&lt;/li>
+ 
+ &lt;li id="c0_slide2" style="min-width: calc(100%/1 2 3 4); padding-bottom: 500px;">&lt;img src="https://blog.shft.dev/images/27A_0057.jpg" alt="" />&lt;div>&lt;div>2&lt;/div>&lt;/div>&lt;/li>
+ 
+ &lt;li id="c0_slide3" style="min-width: calc(100%/1 2 3 4); padding-bottom: 500px;">&lt;img src="https://blog.shft.dev/images/P-2271B.jpg" alt="" />&lt;div>&lt;div>3&lt;/div>&lt;/div>&lt;/li>
+ 
+ &lt;li id="c0_slide4" style="min-width: calc(100%/1 2 3 4); padding-bottom: 500px;">&lt;img src="https://blog.shft.dev/images/castle.jpg" alt="" />&lt;div>&lt;div>4&lt;/div>&lt;/div>&lt;/li>
+ 
+ &lt;/ul>
+ &lt;ol>
+ 
+ &lt;li>&lt;a href="#c0_slide1">&lt;/a>&lt;/li>
+ 
+ &lt;li>&lt;a href="#c0_slide2">&lt;/a>&lt;/li>
+ 
+ &lt;li>&lt;a href="#c0_slide3">&lt;/a>&lt;/li>
+ 
+ &lt;li>&lt;a href="#c0_slide4">&lt;/a>&lt;/li>
+ 
+ &lt;/ol>
+ &lt;div class="prev">&amp;lsaquo;&lt;/div>
+ &lt;div class="next">&amp;rsaquo;&lt;/div>
+&lt;/div></description></item></channel></rss>
