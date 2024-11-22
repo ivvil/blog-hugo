@@ -1,7 +1,5 @@
 ---
 date: 2024-11-22T08:42:37+01:00
-params:
-  math: true
 title: Math examples
 ---
 

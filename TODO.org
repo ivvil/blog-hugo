@@ -2,20 +2,24 @@
 #+TODO: TODO PROG REVW BLOK | DONE
 
 #+BEGIN: clocktable :scope file :maxlevel 2
-#+CAPTION: Clock summary at [2024-11-22 Fri 09:35]
-| Headline                | Time   |      |
+#+CAPTION: Clock summary at [2024-11-22 Fri 09:54]
+| Headline                |   Time |      |
 |-------------------------+--------+------|
-| *Total time*            | *1:23* |      |
+| *Total time*            | *1:30* |      |
 |-------------------------+--------+------|
-| Add articles            | 1:23   |      |
+| Fix mathjax             |   0:07 |      |
+| Add articles            |   1:23 |      |
 | \_  Image test page     |        | 0:40 |
 | \_  Tv channel overview |        | 0:43 |
 #+END:
 
 
-* TODO Fix mathjax
+* DONE Fix mathjax
 :PROPERTIES:
 :Effort:   1h
+:END:
+:LOGBOOK:
+CLOCK: [2024-11-22 Fri 09:47]--[2024-11-22 Fri 09:54] =>  0:07
 :END:
 
 * TODO Fix mermaid
@@ -23,9 +27,11 @@
 :Effort:   1h
 :END:
 
-* PROG Fix lists 
+* PROG Fix lists
 
-* TODO Add articles
+* TODO Change index page
+
+* PROG Add articles
 
 ** REVW Markdown example
 
@@ -62,3 +68,5 @@ With carousel
 :LOGBOOK:
 CLOCK: [2024-11-22 Fri 08:52]--[2024-11-22 Fri 09:35] =>  0:43
 :END:
+
+Maybe add a flexbox to better display channels
