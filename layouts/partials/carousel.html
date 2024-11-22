@@ -1,0 +1,5 @@
+{{ $styles := resources.Get "css/carousel.css" }}
+<link rel="stylesheet" href="{{ $styles.RelPermalink }}">
+
+{{ $scripts := resources.Get "js/carousel.js" }}
+<script src="{{ $scripts.RelPermalink }}"></script>

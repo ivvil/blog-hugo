@@ -27,7 +27,9 @@ CLOCK: [2024-11-22 Fri 09:47]--[2024-11-22 Fri 09:54] =>  0:07
 :Effort:   1h
 :END:
 
-* PROG Fix lists
+* DONE Fix lists
+
+Tailwind's fault
 
 * TODO Change index page
 
@@ -55,11 +57,11 @@ CLOCK: [2024-11-21 Thu 23:52]--[2024-11-22 Fri 00:32] =>  0:40
 
 With carousel
 
-*** TODO Move css and js from to assets folder
+*** DONE Move css and js from to assets folder
 
 *** TODO Move images to assets
 
-*** TODO Fix styles
+*** DONE Fix styles
 
 ** REVW Tv channel overview
 :PROPERTIES:

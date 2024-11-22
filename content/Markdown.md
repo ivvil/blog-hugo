@@ -3,6 +3,16 @@ date: 2024-11-22T08:42:37+01:00
 title: Math examples
 ---
 
+<style>
+ul {
+	list-style-type: disc;
+	margin:
+}
+ol {
+	list-style-type: decimal;
+}
+</style>
+
 ### Guía completa de Markdown
 
 Markdown es un lenguaje de marcado ligero que permite crear documentos de texto formateados de manera sencilla. Es ampliamente utilizado en plataformas como GitHub, foros y blogs.
