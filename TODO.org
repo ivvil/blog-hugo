@@ -47,7 +47,7 @@ Tailwind's fault
 :Effort: 1h30min
 :END:
 
-** REVW Image test page
+** DONE Image test page
 :PROPERTIES:
 :Effort: 30min
 :END:
@@ -59,7 +59,7 @@ With carousel
 
 *** DONE Move css and js from to assets folder
 
-*** TODO Move images to assets
+*** DONE Move images to assets
 
 *** DONE Fix styles
 
