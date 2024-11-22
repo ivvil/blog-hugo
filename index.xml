@@ -19,13 +19,25 @@ ol {
 &lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;strong>Resultado:&lt;/strong>&lt;/p></description></item><item><title>Carusel example</title><link>https://blog.shft.dev/galery/</link><pubDate>Fri, 22 Nov 2024 00:11:55 +0100</pubDate><guid>https://blog.shft.dev/galery/</guid><description>&lt;div id="carousel0" class="carousel" duration="7000">
  &lt;ul>
  
- &lt;li id="c0_slide1" style="min-width: calc(100%/1 2 3 4); padding-bottom: 500px;">&lt;img src="https://blog.shft.dev/images/18A_0048.jpg" alt="" />&lt;/li>
  
- &lt;li id="c0_slide2" style="min-width: calc(100%/1 2 3 4); padding-bottom: 500px;">&lt;img src="https://blog.shft.dev/images/27A_0057.jpg" alt="" />&lt;/li>
+ &lt;li id="c0_slide1" style="min-width: calc(100%/1 2 3 4); padding-bottom: 500px;">
+ &lt;img src="https://blog.shft.dev/images/18A_0048.jpg" alt="" />
+ &lt;/li>
  
- &lt;li id="c0_slide3" style="min-width: calc(100%/1 2 3 4); padding-bottom: 500px;">&lt;img src="https://blog.shft.dev/images/P-2271B.jpg" alt="" />&lt;/li>
  
- &lt;li id="c0_slide4" style="min-width: calc(100%/1 2 3 4); padding-bottom: 500px;">&lt;img src="https://blog.shft.dev/images/castle.jpg" alt="" />&lt;/li>
+ &lt;li id="c0_slide2" style="min-width: calc(100%/1 2 3 4); padding-bottom: 500px;">
+ &lt;img src="https://blog.shft.dev/images/27A_0057.jpg" alt="" />
+ &lt;/li>
+ 
+ 
+ &lt;li id="c0_slide3" style="min-width: calc(100%/1 2 3 4); padding-bottom: 500px;">
+ &lt;img src="https://blog.shft.dev/images/P-2271B.jpg" alt="" />
+ &lt;/li>
+ 
+ 
+ &lt;li id="c0_slide4" style="min-width: calc(100%/1 2 3 4); padding-bottom: 500px;">
+ &lt;img src="https://blog.shft.dev/images/castle.jpg" alt="" />
+ &lt;/li>
  
  &lt;/ul>
  &lt;ol>
