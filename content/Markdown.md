@@ -168,94 +168,40 @@ Para listas de tareas, usa `- [ ]` para pendientes y `- [x]` para completadas.
 ## **Markdown Extendido (Gráficos y Otros)**
 
 ### Diagramas con Markdown
-Diagramas utilizando goat
+Diagramas utilizando mermaid
 
 #### Ejemplo: Diagrama de flujo
 
 ````txt
-```goat
-   _________________                                                          
-  ╱                 ╲                                                     ┌─────┐ 
- ╱ DO YOU UNDERSTAND ╲____________________________________________________│GOOD!│ 
- ╲ FLOW CHARTS?      ╱yes                                                 └──┬──┘ 
-  ╲_________________╱                                                        │
-           │no                                                               │
-  _________▽_________                    ______________________              │
- ╱                   ╲                  ╱                      ╲    ┌────┐   │
-╱ OKAY, YOU SEE THE   ╲________________╱ ... AND YOU CAN SEE    ╲___│GOOD│   │
-╲ LINE LABELED 'YES'? ╱yes             ╲ THE ONES LABELED 'NO'? ╱yes└──┬─┘   │
- ╲___________________╱                  ╲______________________╱       │     │
-           │no                                     │no                 │     │
-   ________▽_________                     _________▽__________         │     │
-  ╱                  ╲    ┌───────────┐  ╱                    ╲        │     │
- ╱ BUT YOU SEE THE    ╲___│WAIT, WHAT?│ ╱ BUT YOU JUST         ╲___    │     │
- ╲ ONES LABELED 'NO'? ╱yes└───────────┘ ╲ FOLLOWED THEM TWICE? ╱yes│   │     │
-  ╲__________________╱                   ╲____________________╱    │   │     │
-           │no                                     │no             │   │     │
-       ┌───▽───┐                                   │               │   │     │
-       │LISTEN.│                                   └───────┬───────┘   │     │
-       └───┬───┘                                    ┌──────▽─────┐     │     │
-     ┌─────▽────┐                                   │(THAT WASN'T│     │     │
-     │I HATE YOU│                                   │A QUESTION) │     │     │
-     └──────────┘                                   └──────┬─────┘     │     │
-                                                      ┌────▽───┐       │     │
-                                                      │SCREW IT│       │     │
-                                                      └────┬───┘       │     │
-                                                           └─────┬─────┘     │
-                                                                 │           │
-                                                                 └─────┬─────┘
-                                                               ┌───────▽──────┐ 
-                                                               │LET'S GO DRING│ 
-                                                               └───────┬──────┘ 
-                                                             ┌─────────▽─────────┐
-                                                             │HEY, I SHOULD TRY  │
-                                                             │INSTALLING FREEBSD!│
-                                                             └───────────────────┘
-
+```mermaid
+sequenceDiagram
+    participant Alice
+    participant Bob
+    Alice->>John: Hello John, how are you?
+    loop Healthcheck
+        John->>John: Fight against hypochondria
+    end
+    Note right of John: Rational thoughts <br/>prevail!
+    John-->>Alice: Great!
+    John->>Bob: How about you?
+    Bob-->>John: Jolly good!
 ```
 ````
 
 **Resultado:**
 
-```goat
-   _________________                                                            
-  ╱                 ╲                                                     ┌─────┐ 
- ╱ DO YOU UNDERSTAND ╲____________________________________________________│GOOD!│ 
- ╲ FLOW CHARTS?      ╱yes                                                 └──┬──┘ 
-  ╲_________________╱                                                        │  
-           │no                                                               │  
-  _________▽_________                    ______________________              │  
- ╱                   ╲                  ╱                      ╲    ┌────┐   │  
-╱ OKAY, YOU SEE THE   ╲________________╱ ... AND YOU CAN SEE    ╲___│GOOD│   │  
-╲ LINE LABELED 'YES'? ╱yes             ╲ THE ONES LABELED 'NO'? ╱yes└──┬─┘   │  
- ╲___________________╱                  ╲______________________╱       │     │  
-           │no                                     │no                 │     │  
-   ________▽_________                     _________▽__________         │     │  
-  ╱                  ╲    ┌───────────┐  ╱                    ╲        │     │  
- ╱ BUT YOU SEE THE    ╲___│WAIT, WHAT?│ ╱ BUT YOU JUST         ╲___    │     │  
- ╲ ONES LABELED 'NO'? ╱yes└───────────┘ ╲ FOLLOWED THEM TWICE? ╱yes│   │     │  
-  ╲__________________╱                   ╲____________________╱    │   │     │  
-           │no                                     │no             │   │     │  
-       ┌───▽───┐                                   │               │   │     │  
-       │LISTEN.│                                   └───────┬───────┘   │     │  
-       └───┬───┘                                    ┌──────▽─────┐     │     │  
-     ┌─────▽────┐                                   │(THAT WASN'T│     │     │  
-     │I HATE YOU│                                   │A QUESTION) │     │     │  
-     └──────────┘                                   └──────┬─────┘     │     │  
-                                                      ┌────▽───┐       │     │  
-                                                      │SCREW IT│       │     │  
-                                                      └────┬───┘       │     │  
-                                                           └─────┬─────┘     │  
-                                                                 │           │  
-                                                                 └─────┬─────┘  
-                                                               ┌───────▽──────┐ 
-                                                               │LET'S GO DRING│ 
-                                                               └───────┬──────┘ 
-                                                             ┌─────────▽─────────┐
-                                                             │HEY, I SHOULD TRY  │
-                                                             │INSTALLING FREEBSD!│
-                                                             └───────────────────┘
-
+```mermaid
+sequenceDiagram
+    participant Alice
+    participant Bob
+    Alice->>John: Hello John, how are you?
+    loop Healthcheck
+        John->>John: Fight against hypochondria
+    end
+    Note right of John: Rational thoughts <br/>prevail!
+    John-->>Alice: Great!
+    John->>Bob: How about you?
+    Bob-->>John: Jolly good!
 ```
 
 ---

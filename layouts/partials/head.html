@@ -5,10 +5,21 @@
 	<link rel="stylesheet" href="{{ $styles.RelPermalink }}" />
 	{{ $title := print .Site.Title " | " .Title }} {{ if .IsHome }}{{ $title =
 	.Site.Title }}{{ end }}
+
 	{{ if .Param "math" }}
 	{{ partialCached "math.html" . }}
 	{{ end }}
+
 	{{ partialCached "carousel.html" . }}
+
+	{{ if .Store.Get "hasMermaid" }}
+	<!-- Page has mermaid code -->
+	<script type="module">
+		import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs';
+		mermaid.initialize({ startOnLoad: true });
+	</script>
+	{{ end }}
+
 	<title>{{ $title }}</title>
 
 </head>

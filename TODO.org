@@ -2,7 +2,7 @@
 #+TODO: TODO PROG REVW BLOK | DONE
 
 #+BEGIN: clocktable :scope file :maxlevel 2
-#+CAPTION: Clock summary at [2024-11-22 Fri 09:54]
+#+CAPTION: Clock summary at [2024-11-25 Mon 13:27]
 | Headline                |   Time |      |
 |-------------------------+--------+------|
 | *Total time*            | *1:30* |      |
@@ -22,7 +22,7 @@
 CLOCK: [2024-11-22 Fri 09:47]--[2024-11-22 Fri 09:54] =>  0:07
 :END:
 
-* TODO Fix mermaid
+* REVW Fix mermaid
 :PROPERTIES:
 :Effort:   1h
 :END:
