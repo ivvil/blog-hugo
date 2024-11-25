@@ -1,21 +1,36 @@
 {{ define "main" }}
 
+<style>
+	.channels {
+	  display: flex;
+	  flex-wrap: wrap;
+	  gap: 2%;
+	  margin-bottom: 2%;
+	  margin-top: 2%;
+	}
+
+	.item {
+	  width: 128px;
+	  margin: 2%;
+	}
+</style>
+
 <main class="w-full h-full bg-white border-4 border-gray-200 p-4 overflow-x-auto markdown">
 	{{ .Content }}
 
-	<ul>
-		{{ range .Site.Data.tv }}
-		<h2>
-			<li>{{ .name }}</li>
-		</h2>
-		<hr>
+	{{ range .Site.Data.tv }}
+	<h2>
+		<li>{{ .name }}</li>
+	</h2>
+	<hr>
+	<div class="channels">
 		{{ range .channels }}
 		<a href="{{ .web }}">
-			<img src="{{ .logo }}" alt="{{ .name }}">
+			<img src="{{ .logo }}" alt="{{ .name }}" class="item">
 		</a>
 		{{ end }}
-		{{ end }}
-	</ul>
+	</div>
+	{{ end }}
 	<p>
 		<a href="/"> >> Home</a>
 	</p>

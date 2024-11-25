@@ -2,15 +2,15 @@
 #+TODO: TODO PROG REVW BLOK | DONE
 
 #+BEGIN: clocktable :scope file :maxlevel 2
-#+CAPTION: Clock summary at [2024-11-25 Mon 13:27]
+#+CAPTION: Clock summary at [2024-11-25 Mon 20:33]
 | Headline                |   Time |      |
 |-------------------------+--------+------|
-| *Total time*            | *1:30* |      |
+| *Total time*            | *2:06* |      |
 |-------------------------+--------+------|
 | Fix mathjax             |   0:07 |      |
-| Add articles            |   1:23 |      |
+| Add articles            |   1:59 |      |
 | \_  Image test page     |        | 0:40 |
-| \_  Tv channel overview |        | 0:43 |
+| \_  Tv channel overview |        | 1:19 |
 #+END:
 
 
@@ -68,6 +68,7 @@ With carousel
 :Effort: 30min
 :END:
 :LOGBOOK:
+CLOCK: [2024-11-25 Mon 19:57]--[2024-11-25 Mon 20:33] =>  0:36
 CLOCK: [2024-11-22 Fri 08:52]--[2024-11-22 Fri 09:35] =>  0:43
 :END:
 
