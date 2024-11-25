@@ -2,15 +2,16 @@
 #+TODO: TODO PROG REVW BLOK | DONE
 
 #+BEGIN: clocktable :scope file :maxlevel 2
-#+CAPTION: Clock summary at [2024-11-25 Mon 20:33]
-| Headline                |   Time |      |
-|-------------------------+--------+------|
-| *Total time*            | *2:06* |      |
-|-------------------------+--------+------|
-| Fix mathjax             |   0:07 |      |
-| Add articles            |   1:59 |      |
-| \_  Image test page     |        | 0:40 |
-| \_  Tv channel overview |        | 1:19 |
+#+CAPTION: Clock summary at [2024-11-25 Mon 22:08]
+| Headline                    |   Time |      |
+|-----------------------------+--------+------|
+| *Total time*                | *2:55* |      |
+|-----------------------------+--------+------|
+| Fix mathjax                 |   0:07 |      |
+| Add articles                |   2:48 |      |
+| \_  Nix page setup overview |        | 0:49 |
+| \_  Image test page         |        | 0:40 |
+| \_  Tv channel overview     |        | 1:19 |
 #+END:
 
 
@@ -35,11 +36,14 @@ Tailwind's fault
 
 * PROG Add articles
 
-** REVW Markdown example
+** DONE Markdown example
 
 ** TODO Nix page setup overview
 :PROPERTIES:
 :Effort: 1h30min
+:END:
+:LOGBOOK:
+CLOCK: [2024-11-25 Mon 20:43]--[2024-11-25 Mon 21:32] =>  0:49
 :END:
 
 ** TODO Lisp overview
@@ -63,7 +67,7 @@ With carousel
 
 *** DONE Fix styles
 
-** REVW Tv channel overview
+** DONE Tv channel overview
 :PROPERTIES:
 :Effort: 30min
 :END:

@@ -29,6 +29,9 @@ menu:
     - name: tv
       url: /tv/
       weight: 1
+    - name: nix
+      url: /nix/
+      weight: 1
 params:
   math: true
 
