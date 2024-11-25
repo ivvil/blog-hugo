@@ -1,0 +1,19 @@
+{{ if .Store.Get "hasMermaid" }}
+<!-- Page has mermaid code -->
+<script type="module">
+	import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs';
+	mermaid.initialize({ startOnLoad: true });
+</script>
+{{ end }}
+
+{{ if .Store.Get "hasMathjax" }}
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script>
+	MathJax = {
+		tex: {
+			displayMath: [['\\[', '\\]'], ['$$', '$$']],  // block
+			inlineMath: [['\\(', '\\)']]                  // inline
+		}
+	};
+</script>
+{{ end }}
