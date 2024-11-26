@@ -9,9 +9,9 @@ En este articulo explicare que es Nix, como lo podemos utilizar para nuestros pr
 
 En realidad Nix no es mas que un gestor de paquetes, con la peculiaridad de que se puede instalar en una gran variedad de sistemas (Distribuciones de Linux, MacOS, Windows con WSL)
 
-La gran ventaja de Nix frente a otros gestores de paquetes es que funciona de una manera declarativa, utilizando expresiones escritas en el lenguaje Nix, al que me referiré como nixlang para poder diferenciarlos mejor. Esto nos deja mantener una configuración versionada y estable sin tener que preocuparnos de paquetes huérfanos.
+La gran diferencia de Nix frente a otros gestores de paquetes es que funciona de una manera declarativa, utilizando expresiones escritas en el lenguaje Nix (al que me referiré como nixlang para poder diferenciarlos mejor) esto nos deja mantener una configuración versionada y estable sin tener que preocuparnos de paquetes huérfanos, dependencias y otros de los grandes problemas de los gestores de paquetes convencionales.
 
-Otra gran diferencia con otros gestores de paquetes es la idea de las generaciones, una manera de mantener varias versiones de nuestros paquetes instaladas para que si una actualización los rompe, podamos volver a una generación anterior, donde estos no estén rotos.
+Otra diferencia con otros gestores de paquetes son las generaciones, una manera de mantener varias versiones de nuestros paquetes instaladas para que si una actualización los rompe, podamos volver a una generación anterior, donde las diferentes versiones de estas no tengan conflictos.
 
 ** Como instalarlo 
 
