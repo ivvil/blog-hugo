@@ -2,29 +2,32 @@
 
 <main class="w-full h-full bg-white border-4 border-blue-800 border-dotted p-4">
   <section>
+
+	{{ $lovelace := resources.Get "/images/Lovelace logo 2.webp" }}
+	
     <div class="right margin">
-      <img src="/images/octodex.jpg" alt="me" />
-      <p><a href="https://octodex.github.com/boxertocat/">octodex #139</a></p>
+      <img src="{{ $lovelace.RelPermalink}}" alt="me" />
     </div>
     <h1 class="text-xl font-bold">Bienvenido a mi blog!</h1>
     <p class="my-4">
 	  <h2>Quien soy</h2>
 	  Soy Iván Villagrasa, estudiante de desarrollo web. Me gusta el diseño, el desarrollo de software, la música y la fotografía.
 
-	  Este es mi blog, espero escribir unos cuantos articulos sobre cosas que me interesan. 
-      <span
-        class="bg-[url('/images/water.webp')] text-black font-bold p-4 block"
-        >quickly try out new designs
-      </span>
+	  Este es mi blog, espero escribir unos cuantos articulos sobre cosas que me interesan.
+	  
+      <!-- <span -->
+      <!--   class="bg-[url('/images/water.webp')] text-black font-bold p-4 block" -->
+      <!--   >quickly try out new designs -->
+      <!-- </span> -->
     </p>
   </section>
 
-  <section>
-    <p>
-      To get started, check out
-      <a href="https://github.com/isaksolheim/cyberscape">the docs</a>! 💓
-    </p>
-  </section>
+  <!-- <section> -->
+  <!--   <p> -->
+  <!--     To get started, check out -->
+  <!--     <a href="https://github.com/isaksolheim/cyberscape">the docs</a>! 💓 -->
+  <!--   </p> -->
+  <!-- </section> -->
 </main>
 
 {{ end }}
