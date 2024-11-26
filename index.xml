@@ -21,22 +21,22 @@ ol {
  
  
  &lt;li id="c0_slide1" style="min-width: calc(100%/1 2 3 4); padding-bottom: 500px;">
- &lt;img src="https://blog.shft.dev/images/18A_0048.jpg" alt="" />
+ &lt;img src="https://blog.shft.dev/images/18A_0048.webp" alt="" />
  &lt;/li>
  
  
  &lt;li id="c0_slide2" style="min-width: calc(100%/1 2 3 4); padding-bottom: 500px;">
- &lt;img src="https://blog.shft.dev/images/27A_0057.jpg" alt="" />
+ &lt;img src="https://blog.shft.dev/images/27A_0057.webp" alt="" />
  &lt;/li>
  
  
  &lt;li id="c0_slide3" style="min-width: calc(100%/1 2 3 4); padding-bottom: 500px;">
- &lt;img src="https://blog.shft.dev/images/P-2271B.jpg" alt="" />
+ &lt;img src="https://blog.shft.dev/images/P-2271B.webp" alt="" />
  &lt;/li>
  
  
  &lt;li id="c0_slide4" style="min-width: calc(100%/1 2 3 4); padding-bottom: 500px;">
- &lt;img src="https://blog.shft.dev/images/castle.jpg" alt="" />
+ &lt;img src="https://blog.shft.dev/images/castle.webp" alt="" />
  &lt;/li>
  
  &lt;/ul>
