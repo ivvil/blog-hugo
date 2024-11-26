@@ -1,6 +1,6 @@
 #+title: Nix
 
-Como programadores, creo que todos hemos tenido algun encontronazo con los gestores de paquetes, ya sea para instalar un proyecto de python o tener que arreglar algun conflicto de paquetes en Linux.
+Como programadores, creo que todos hemos tenido algun encontronazo con los gestores de paquetes, ya sea para instalar un proyecto de python o tener que arreglar algún conflicto de paquetes en Linux.
 La realidad es que no hay ninguna solución perfecta para la gestión de paquetes de nuestros proyectos, pero Nix es una de las mejores opciones.
 
 En este articulo explicare que es Nix, como lo podemos utilizar para nuestros proyectos y en especifico como lo he usado para este proyecto.
@@ -39,28 +39,44 @@ Para administrar paquetes de una forma declarativa y portable usaremos Home Mana
   {
     description = "Home managet test";
 
+    inputs = {
+      nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+      home-manager = {
+        url = "github:nix-community/home-manager";
+        inputs.nixpkgs.follows = "nixpkgs";
+      };
+    };
+
     outputs = inputs @ {
       self,
         home-manager,
+        nixpkgs,
         ...
     }: rec {
       homeConfigurations = {
         "tu nombre de usuario" = home-manager.lib.homeManagerConfiguration {
-          
+          pkgs = nixpkgs.legacyPackages.x86_64-linux;
+
+          home.packages = with pkgs; [
+            # Los paquetes que quieras instalar
+            vlc
+            discord
+          ];
         };
       };
     };
-
-    inputs = {
-      nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
-      home-manager = {
-        url = "github:0xc000022070/zen-browser-flake";
-        inputs.nixpkgs.follows = "nixpkgs";
-      };
-    };
-  }
+  }  
 #+end_src
 
+Aunque parezca un archivo bastante complejo, pero explicándolo paso a paso entenderemos las partes mas importantes.
+
+*** Inputs
+
+Las ~inputs~ o entradas son los archivos internos que nuestro flake utilizara, en este caso ~nixpkgs~ que es la colección de oficial paquetes para nix y ~home-manager~ es el modulo de Nix que nos deja configurar nuestro sistema de una forma declarativa en varios sistemas *nix.
+
+*** Outputs
+
+Los ~outputs~ o salidas son, en este caso las configuraciones de Home Manager que exporta; estas se exportan como ~homeConfigurations~. ~home-manager.lib.homeManagerConfiguration~ es la función que genera una configuración de Home Manager con los valores que especificamos.
 
 ** NixOS
 
