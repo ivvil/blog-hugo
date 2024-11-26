@@ -21,15 +21,46 @@ Para ver todas las opciones de instalación podemos ir a [[https://nixos.org/dow
   sh <(curl -L https://nixos.org/nix/install) --daemon
 #+end_src
 
-* Configuración del sistema con nix
-
-Gracias a home-manager y NixOS podemos también crear una configuración del sistema declarativa, gracias a los flakes o a las expresiones de nix.
-
 ** Home manager
 
 Home manager es una herramienta que nos ayuda a generar archivos de configuración a través de expresiones nix. Home manager nos deja especificar la configuración de programas y la instalación de estos para una gran variedad de entornos *nix como MacOS y Linux.
 
 El gran problema de home manager es que no tiene control sobre el sistema, solo puede instalar paquetes y crear archivos de configuración.
+
+* Configuración del sistema con nix
+
+Una de las funciones mas útiles para nuestro día a día de nix es su habilidad de instalar y configurar paquetes de forma declarativa, en esta sección explicare como podemos administrar nuestro sistema con Nix, Home Manager y NixOS.
+
+** Administración de paquetes
+
+Para administrar paquetes de una forma declarativa y portable usaremos Home Manager.
+
+#+begin_src nix
+  {
+    description = "Home managet test";
+
+    outputs = inputs @ {
+      self,
+        home-manager,
+        ...
+    }: rec {
+      homeConfigurations = {
+        "tu nombre de usuario" = home-manager.lib.homeManagerConfiguration {
+          
+        };
+      };
+    };
+
+    inputs = {
+      nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+      home-manager = {
+        url = "github:0xc000022070/zen-browser-flake";
+        inputs.nixpkgs.follows = "nixpkgs";
+      };
+    };
+  }
+#+end_src
+
 
 ** NixOS
 
