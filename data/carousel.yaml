@@ -1,9 +1,9 @@
 images:
-  - image: /images/18A_0048.jpg
+  - image: /images/18A_0048.webp
     content_html: "1"
-  - image: /images/27A_0057.jpg
+  - image: /images/27A_0057.webp
     content_html: "2"
-  - image: /images/P-2271B.jpg
+  - image: /images/P-2271B.webp
     content_html: "3"   
-  - image: /images/castle.jpg
+  - image: /images/castle.webp
     content_html: "4"   
