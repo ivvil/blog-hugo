@@ -1,0 +1,18 @@
+<header>
+
+  {{ $logo := resources.Get "/images/shft.gif"}}
+
+  <style>
+	.logo-bg {
+	  background-image: url("{{ $logo.RelPermalink }}");
+	  background-color: white;
+	}
+  </style>
+  
+  <a href="/">
+    <figure
+      id="header"
+      class="max-w-4xl h-20 border-4 border-pink-400 mx-4 mt-16 lg:m-auto lg:mt-16 logo-bg"
+    ></figure>
+  </a>
+</header>
