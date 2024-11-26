@@ -54,7 +54,7 @@ ol {
  &lt;div class="prev">&amp;lsaquo;&lt;/div>
  &lt;div class="next">&amp;rsaquo;&lt;/div>
 &lt;/div></description></item><item><title>Nix</title><link>https://blog.shft.dev/nix/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.shft.dev/nix/</guid><description>&lt;p>
-Como programadores, creo que todos hemos tenido algun encontronazo con los gestores de paquetes, ya sea para instalar un proyecto de python o tener que arreglar algun conflicto de paquetes en Linux.
+Como programadores, creo que todos hemos tenido algun encontronazo con los gestores de paquetes, ya sea para instalar un proyecto de python o tener que arreglar algún conflicto de paquetes en Linux.
 La realidad es que no hay ninguna solución perfecta para la gestión de paquetes de nuestros proyectos, pero Nix es una de las mejores opciones.&lt;/p>
 &lt;p>
 En este articulo explicare que es Nix, como lo podemos utilizar para nuestros proyectos y en especifico como lo he usado para este proyecto.&lt;/p></description></item></channel></rss>
