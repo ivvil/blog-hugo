@@ -76,7 +76,51 @@ Las ~inputs~ o entradas son los archivos internos que nuestro flake utilizara, e
 
 *** Outputs
 
-Los ~outputs~ o salidas son, en este caso las configuraciones de Home Manager que exporta; estas se exportan como ~homeConfigurations~. ~home-manager.lib.homeManagerConfiguration~ es la función que genera una configuración de Home Manager con los valores que especificamos.
+Los ~outputs~ o salidas son, en este caso las configuraciones de Home Manager que exporta; estas se exportan como ~homeConfigurations~.
+
+~home-manager.lib.homeManagerConfiguration~ es la función que genera una configuración de Home Manager con los valores que especificamos. Aquí especificamos los paquetes para nuestra plataforma y los paquetes que queremos instalar.
+
+** Configuración de paquetes
+
+Ahora, con una ligera modificación a nuestra configuración, podemos configurar los paquetes instalados.
+
+#+begin_src nix
+  {
+    ...
+      homeConfigurations = {
+      "tu nombre de usuario" = home-manager.lib.homeManagerConfiguration {
+        pkgs = nixpkgs.legacyPackages.x86_64-linux;
+
+        ...
+
+        let
+          email = "Tu correo electronico";
+          name = "Tu nombre";
+        in {
+          programs.git = {
+            enable = true;
+            lfs.enable = true;
+            extraConfig = {
+              color.ui = true;
+              core.editor = "emacs";
+              credential.helper = "store";
+              github.user = name;
+              push.autoSetupRemote = true;
+            };
+            userEmail = email;
+            userName = name;
+          };
+        };
+      };
+    };
+    ...
+  }
+#+end_src
+
+En esta configuración configuramos e instalamos git; al hacer ~programs.git.enable~ verdadero, automáticamente git se añadirá a los paquetes a instalar.
+
+Utilizando el ~let {} in {}~ podemos especificar una variable local para poder cambiar nuestro correo electronico y contraseña de una manera fácil.
+Aquí también habilitamos ~git-lfs~ y especificamos algunas configuraciones extras que automáticamente se traducen de la sintaxis de nix a la del archivo de configuración sin chequearas. En este caso forzamos a que la salida de terminal tenga colores, que el editore que usa, el credential helper, nuestro usuario de git y que se configure automaticamente el remoto para pushear.
 
 ** NixOS
 
