@@ -6,17 +6,23 @@ ul {
 ol {
 	list-style-type: decimal;
 }
+
+blockquote {
+ margin-left: 10px;
+ margin-right: 10px;
+ border-left: 5px solid #a6a6a6;
+}
+
+blockquote p {
+ margin-left: 10px;
+}
 &lt;/style>
 &lt;h3 id="guía-completa-de-markdown">Guía completa de Markdown&lt;/h3>
 &lt;p>Markdown es un lenguaje de marcado ligero que permite crear documentos de texto formateados de manera sencilla. Es ampliamente utilizado en plataformas como GitHub, foros y blogs.&lt;/p>
 &lt;hr>
 &lt;h2 id="markdown-básico">&lt;strong>Markdown Básico&lt;/strong>&lt;/h2>
 &lt;h3 id="encabezados">Encabezados&lt;/h3>
-&lt;p>Usa el símbolo &lt;code>#&lt;/code> seguido de un espacio para crear encabezados. Puedes variar el tamaño añadiendo más &lt;code>#&lt;/code>.&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-markdown" data-lang="markdown">&lt;span style="display:flex;">&lt;span># Encabezado Nivel 1
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">## Encabezado Nivel 2
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">### Encabezado Nivel 3
-&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;strong>Resultado:&lt;/strong>&lt;/p></description></item><item><title>Carusel example</title><link>https://blog.shft.dev/galery/</link><pubDate>Fri, 22 Nov 2024 00:11:55 +0100</pubDate><guid>https://blog.shft.dev/galery/</guid><description>&lt;div id="carousel0" class="carousel" duration="7000">
+&lt;p>Usa el símbolo &lt;code>#&lt;/code> seguido de un espacio para crear encabezados. Puedes variar el tamaño añadiendo más &lt;code>#&lt;/code>.&lt;/p></description></item><item><title>Carusel example</title><link>https://blog.shft.dev/galery/</link><pubDate>Fri, 22 Nov 2024 00:11:55 +0100</pubDate><guid>https://blog.shft.dev/galery/</guid><description>&lt;div id="carousel0" class="carousel" duration="7000">
  &lt;ul>
  
  
