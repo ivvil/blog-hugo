@@ -11,6 +11,16 @@ ul {
 ol {
 	list-style-type: decimal;
 }
+
+blockquote {
+    margin-left: 10px;
+    margin-right: 10px;
+    border-left: 5px solid #a6a6a6;
+}
+
+blockquote p {
+    margin-left: 10px;
+}
 </style>
 
 ### Guía completa de Markdown
