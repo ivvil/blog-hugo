@@ -51,18 +51,31 @@ Para administrar paquetes de una forma declarativa y portable usaremos Home Mana
         "tu nombre de usuario" = home-manager.lib.homeManagerConfiguration {
           pkgs = nixpkgs.legacyPackages.x86_64-linux;
 
-          home.packages = with pkgs; [
-            # Los paquetes que quieras instalar
-            vlc
-            discord
-          ];
+          home = {
+            username = "tu nombre de usuario";
+            stateVersion = "22.11";
+            
+            packages = with pkgs; [
+              # Los paquetes que quieras instalar
+              vlc
+              discord
+            ];
+          };
+
+          programs.homeManager.enable = true;
         };
       };
     };
   }  
 #+end_src
 
-Aunque parezca un archivo bastante complejo, pero explicándolo paso a paso entenderemos las partes mas importantes.
+Para activar nuestra configuración, ejecutaremos:
+
+#+begin_src sh
+  home-manager switch --flake .
+#+end_src
+
+Aunque el flake que hemos creado parezca archivo bastante complejo, pero explicándolo paso a paso entenderemos las partes mas importantes.
 
 *** Inputs
 
@@ -117,4 +130,139 @@ Aquí también habilitamos ~git-lfs~ y especificamos algunas configuraciones ext
 
 ** Configuración del sistema
 
-Con NixOS podremos configurar nuestro sistema entero de esta manera, ya sea el cargador de arranque, los drivers de video o lo que quieras
+Con NixOS podremos configurar nuestro sistema entero de esta manera, ya sea el cargador de arranque, los drivers de video o lo que quieras, pero primero tendremos que hacer unos cambios a nuestro flake para exportar una configuración de NixOS.
+
+#+begin_src nix
+  {
+    description = "NixOS config test";
+
+    outputs = inputs @ {
+      self,
+        home-manager,
+        nixpkgs,
+        ...
+    }: rec {
+      nixosConfigurations = {
+        "nombre de tu configuración" = nixpkgs.lib.nixosSystem {
+          system = "x86_64-linux";
+          specialArgs = {inherit inputs;};
+          modules = [
+            home-manager.nixosModules.home-manager
+            {
+              networking.hostName = "hostname";
+              system.stateVersion = "24.05";
+              ollama = {
+                enable = true;
+                acceleratiom = "rocm";
+              };
+            }
+            ./ollama.nix
+          ];
+        };
+      };
+    };
+
+    inputs = {
+      nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+
+      home-manager = {
+        url = "github:nix-community/home-manager";
+        inputs.nixpkgs.follows = "nixpkgs";
+      };
+    };
+  }
+#+end_src
+
+En nuestro flake actualizado, cambiamos ~home-manager.lib.homeManagerConfiguration~ por ~nixpkgs.lib.nixosSystem~, que es la función que genera un sistema de NixOS basada en la configuración que le pasamos.
+
+*** Nuestro primer modulo
+
+Para organizar mejor nuestra configuración, podemos usar módulos, que nos dejan elegir que parte de nuestra configuración queremos utilizar y hacer nuestra configuración configurable. Con un ejemplo, lo entenderemos mejor.
+
+En este ejemplo configuraremos ollama, que es un servicio para correr y descargar LLMs en local.
+
+Para utilizarlo lo guardaremos en el mismo directorio que el flake y lo llamaremos ~ollama.nix~
+
+#+begin_src nix
+  {
+    lib,
+    config,
+    ...
+  }:
+  with lib; let
+    cfg = config.ollama;
+  in {
+    options.ollama = {
+      enable = mkEnableOption "ollama";
+      models = mkOption {
+        type = types.listOf types.str;
+        default = ["mistral-small"];
+      };
+      acceleration = mkOption {
+        type = types.nullOr (
+          types.enum [
+            false
+            "rocm"
+            "cuda"
+          ]
+        );
+        default = null;
+      };
+      ui = mkEnableOption "Enable web ui";
+    };
+
+    config = mkIf cfg.enable {
+      services = {
+        ollama = {
+          enable = true;
+          loadModels = cfg.models;
+          acceleration = cfg.acceleration;
+        };
+        nextjs-ollama-llm-ui.enable = cfg.ui;
+      };
+    };
+  }
+#+end_src
+
+Este modulo tiene una sintaxis bastante diferente a los flakes que hemos visto antes, vamos a repasar su sintaxis:
+
+**** Imports
+
+Vemos que nuestro modulo empieza con un bloque que no habíamos visto antes, haciendo que nuestro flake se vea así:
+
+#+begin_src nix
+  {
+    imports
+  }: {
+    code
+  }
+#+end_src
+
+En nuestro bloque de imports, importamos ~lib~, ~config~ y el resto de imports por defecto (~...~) para poder usarlos en nuestro modulo. ~lib~ importa muchas funciones y variables útiles para nuestra configuración, y ~config~ que nos deja exportar nuestras opciones de configuración.
+
+**** ~options~
+
+En este bloque declaramos que ~ollama~ sera la opción de configuración que definiremos, dentro tenemos 4 variables:
+
+- ~enable~
+
+Que es un ~EnableOption~, un booleano para activar el modulo de ollama y por defecto falso. También tiene el comentario de uso ~"ollama"~.
+
+- ~models~
+
+Declara los nombres de los modelos que automáticamente descargará, por lo que su tipo es una lista (~listOf~) de strings (~str~). Por defecto tendrá el valor ~["mistral-small"]~.
+
+- ~acceleration~
+
+Si utilizar la aceleración de hardware, en este caso el tipo de datos es mas complejo por que queremos representar mas opciones; puede ser o ~null~ que deja a Nix elegir la aceleración, o puedes forzarlo usando uno de los valores del enum: ~false~ para apagar la aceleración, ~rocm~ para usar la de AMD y ~cuda~ para usar la de Nvidia.
+
+- ~ui~
+
+Enciende la interfaz web para usar ollama desde el navegador.
+
+**** ~config~
+
+En esta parte utilizaremos los valores de las variables declaradas en ~options~ para crear nuestra configuración.
+
+Primero, hacemos un ~if~ con ~mkIf~ para que ~cfg.enable~ encienda nuestra configuración. En todas las demás opciones simplemente le pasamos el valor que configuramos.
+
